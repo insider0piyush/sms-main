@@ -252,8 +252,8 @@
 
         <?php
             include "Faculty_init.php";
-           $createTable =  "CREATE TABLE $FC_NOTICE_STUDENT($FC_STUDENT_NOTICE_DATE DATE,$FC_STUDENT_NOTICE_NAME TEXT,$FC_STUDENT_NOTICE_DES TEXT)";
-           //$queryExe = mysqli_query($con,$createTable);
+           $createTable =  "CREATE TABLE IF EXISTS $FC_NOTICE_STUDENT($FC_STUDENT_NOTICE_DATE DATE,$FC_STUDENT_NOTICE_NAME TEXT,$FC_STUDENT_NOTICE_DES TEXT)";
+           $queryExe = mysqli_query($con,$createTable);
 
            if(isset($_POST['fc_add_notice_student'])){
 

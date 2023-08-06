@@ -212,7 +212,7 @@
 
     <?php
         include "Admin_init.php" ;
-            $createTable= "CREATE TABLE $ADMIN(
+            $createTable= "CREATE TABLE IF EXISTS $ADMIN(
                 $ADMIN_NAME VARCHAR(20),
                 $ADMIN_CONTACT VARCHAR(20) UNIQUE ,
                 $ADMIN_EMAIL VARCHAR(50) PRIMARY KEY,
