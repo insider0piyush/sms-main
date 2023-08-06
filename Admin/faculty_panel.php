@@ -203,10 +203,10 @@
 
         <?php
             include "Admin_init.php";
-            $createTable = "CREATE TABLE IF NOT EXISTS $FACULTY_ADD($FACULTY_MNO BIGINT UNIQUE,
-                            $FACULTY_NAME TEXT,$FACULTY_EMAIL VARCHAR(256) PRIMARY KEY,$FACULTY_PASSWORD TEXT,$FACULTY_QUALIFICATION TEXT)";
+            $createTable = "CREATE TABLE $FACULTY_ADD($FACULTY_MNO BIGINT PRIMARY KEY,
+                            $FACULTY_NAME TEXT,$FACULTY_EMAIL TEXT UNIQUE,$FACULTY_PASSWORD TEXT,$FACULTY_QUALIFICATION TEXT)";
             
-            $queryExe = mysqli_query($con,$createTable);
+            //$queryExe = mysqli_query($con,$createTable);
             
             if(isset($_POST['add_faculty'])){
                 $MNO=$_POST[$FACULTY_MNO];

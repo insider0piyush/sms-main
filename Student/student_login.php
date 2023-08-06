@@ -186,6 +186,7 @@
         include "Student_init.php";
 
         if(isset($_POST['btnLogin'])){
+
             $EMAIL=$_POST[$STUDENT_EMAIL];
             $PASSWORD=$_POST[$STUDENT_PASSWORD];
             

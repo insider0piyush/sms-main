@@ -203,11 +203,11 @@
 
         <?php
             include "Admin_init.php";
+            $createTable = "CREATE TABLE $STUDENT_ADD($STUDENT_MNO BIGINT PRIMARY KEY,
+                            $STUDENT_NAME TEXT,$STUDENT_EMAIL TEXT UNIQUE,$STUDENT_PASSWORD TEXT,$STUDENT_RESULT FLOAT)";
             
-            $createTable = "CREATE TABLE IF NOT EXISTS $STUDENT_ADD( $STUDENT_MNO BIGINT UNIQUE, $STUDENT_NAME TEXT,$STUDENT_EMAIL VARCHAR(256) PRIMARY KEY,$STUDENT_PASSWORD TEXT,$STUDENT_RESULT FLOAT)";
+            //$queryExe = mysqli_query($con,$createTable);
             
-            $queryExe = mysqli_query($con,$createTable);
-
             if(isset($_POST['add_student'])){
                 $MNO=$_POST[$STUDENT_MNO];
                 $NAME=$_POST[$STUDENT_NAME];

@@ -212,13 +212,13 @@
 
     <?php
         include "Admin_init.php" ;
-            $createTable= "CREATE TABLE IF NOT EXISTS $ADMIN(
+            $createTable= "CREATE TABLE $ADMIN(
                 $ADMIN_NAME VARCHAR(20),
                 $ADMIN_CONTACT VARCHAR(20) UNIQUE ,
                 $ADMIN_EMAIL VARCHAR(50) PRIMARY KEY,
                 $ADMIN_PASSWORD TEXT)";
 
-            $queryExe=mysqli_query($con,$createTable);
+            //$queryExe=mysqli_query($con,$createTable);
 
             if(isset($_POST['btnSignUp']))
             {

@@ -377,8 +377,8 @@
 
         <?php
             include "Faculty_init.php";
-            $createTable = "CREATE TABLE IF NOT EXISTS $JAVA_ASSIGNMENTS(java_ch TEXT,java_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $JAVA_ASSIGNMENTS(java_ch TEXT,java_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['java_assign'])){
                 $JAVA_ch = $_POST[$JAVA_CH];
@@ -403,8 +403,8 @@
                     }
                 }
 
-            $createTable = "CREATE TABLE IS NOT EXISTS $PYTHON_ASSIGNMENTS(python_ch TEXT,python_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $PYTHON_ASSIGNMENTS(python_ch TEXT,python_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['python_assign'])){
                 $PYTHON_ch = $_POST[$PYTHON_CH];
@@ -430,8 +430,8 @@
                 }
 
 
-            $createTable = "CREATE TABLE IF NOT EXISTS $KOTLIN_ASSIGNMENTS(kotlin_ch TEXT,kotlin_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $KOTLIN_ASSIGNMENTS(kotlin_ch TEXT,kotlin_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['kotlin_assign'])){
                 $KOTLIN_ch = $_POST[$KOTLIN_CH];
@@ -457,8 +457,8 @@
                 }
 
 
-            $createTable = "CREATE TABLE IS NOT EXISTS $C_ASSIGNMENTS(c_ch TEXT,c_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $C_ASSIGNMENTS(c_ch TEXT,c_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['c_assign'])){
                 $C_ch = $_POST[$C_CH];
@@ -484,8 +484,8 @@
                 }
 
 
-            $createTable = "CREATE TABLE IS NOT EXISTS $PHP_ASSIGNMENTS(php_ch TEXT,php_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $PHP_ASSIGNMENTS(php_ch TEXT,php_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['php_assign'])){
                 $PHP_ch = $_POST[$PHP_CH];
@@ -510,8 +510,8 @@
                     }
                 }
 
-            $createTable = "CREATE TABLE IF NOT EXISTS $CS_ASSIGNMENTS(cs_ch TEXT,cs_des DATE)";
-            $queryExe = mysqli_query($con,$createTable);
+            $createTable = "CREATE TABLE $CS_ASSIGNMENTS(cs_ch TEXT,cs_des DATE)";
+            //$queryExe = mysqli_query($con,$createTable);
 
             if(isset($_POST['cs_assign'])){
                 $CS_ch = $_POST[$CS_CH];

@@ -6,7 +6,7 @@ $STUDENT_ADD='student_add';
 $ADMIN='admin';
 $FACULTY='faculty';
 $USER='root';
-$PASSWORD='Piyush@123';
+$PASSWORD='';
 
 $FC_NOTICE_STUDENT='fc_notice_student';
 $FC_STUDENT_NOTICE_DATE='fc_student_notice_date';

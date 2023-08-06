@@ -14,7 +14,7 @@ $STUDENT_NOTICE_ADD='student_notice_add';
 $FACULTY_NOTICE_ADD='faculty_notice_add';
 
 $USER='root';
-$PASSWORD='Piyush@123';
+$PASSWORD='';
 
 $ADMIN_NAME='admin_name';
 $ADMIN_CONTACT='admin_contact';

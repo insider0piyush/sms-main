@@ -3,9 +3,35 @@
         <title>
             Student Management System
         </title>
+        <meta name="viewreport" content="width=device-width, initial-scale=1">
     </head>
     
     <style>
+
+        #mySidenav a {
+        position: absolute;
+        left: -105px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 12px 12px 0;
+        }
+
+        #mySidenav a:hover {
+        left: 0;
+        }
+
+        #about {
+        top: 20px;
+        background-color: black;
+        }
+        #contact {
+        top: 80px;
+        background-color: #555
+        }
         .center{
             margin-left: auto;
             margin-right: auto;
@@ -29,11 +55,15 @@
             }
         #grad_back 
         {
-            background-image: linear-gradient(to bottom right , red , indigo , red);
+            background-image: linear-gradient(to bottom right , orangered , white , green);
         }
     </style>
 
     <body id="grad_back">
+        <div id="mySidenav" class="sidenav">
+            <a href="about_us.php" id="about">About Us</a>
+            <a href="contact_us.php" id="contact">Contact Us</a>
+        </div>
         <h1 style="margin-top: 20px; text-align:center ; font-family:Comic Sans MS ; color: white"> 
             Welcome To Student Management System 
         </h1>

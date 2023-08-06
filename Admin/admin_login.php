@@ -194,6 +194,7 @@
         <?php
         session_start();
         include "Admin_init.php" ;
+
         if(isset($_POST['btnLogin'])){
             $EMAIL=$_POST[$ADMIN_EMAIL];
             $PASSWORD=$_POST[$ADMIN_PASSWORD];

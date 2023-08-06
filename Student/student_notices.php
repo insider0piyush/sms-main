@@ -180,7 +180,7 @@
                                                 <td>
                                                         
                                                     <?php                                                    
-                                                        echo "Des : $rows[$STUDENT_NOTICE_DES]"."</br>";
+                                                        echo "$rows[$STUDENT_NOTICE_DES]"."</br>";
                                                     ?>
                                                     
                                                 </td>
@@ -239,7 +239,7 @@
                                                     <td>
                                                         
                                                         <?php                                                    
-                                                            echo "Des : $rows[$FC_STUDENT_NOTICE_DES]"."</br>";
+                                                            echo "$rows[$FC_STUDENT_NOTICE_DES]"."</br>";
                                                         ?>
                                                     
                                                     </td>

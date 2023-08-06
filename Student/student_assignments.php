@@ -26,23 +26,23 @@
         }
         .box_upside{
             color: white;
-            background-color: brown;
+            background-color: salmon;
             height: 224.50px;
             width: 425px;
             margin-top: 10px;
             margin-left: 10px;
-            border: 4px solid brown;
+            border: 4px solid #101820;
             border-radius: 30px 0px 0px 30px;
             overflow: auto;
         }
         .box_downside{
             color: white;
-            background-color: brown;
+            background-color: salmon;
             height: 224.50px;
             width: 425px;
             margin-top: 10px;
             margin-left: 10px;
-            border: 4px solid brown;
+            border: 4px solid #101820;
             border-radius: 30px 0px 0px 30px;
             overflow: auto;
         }
